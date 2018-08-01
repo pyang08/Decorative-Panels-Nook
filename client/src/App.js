@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
 import about from "./components/about";
 import products from "./components/products";
+import wavePanels from "./components/wavePanels";
 import "./App.css";
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
           <Route exact path ="/" component={about} />
           <Route exact path ="/about" component={about} />
           <Route exact path ="/products" component={products} />
+          <Route exact path ="/wavePanels" component={wavePanels} />
         </Switch>
 
         </div>
