@@ -6,7 +6,7 @@ const About = () => {
     <div>
         <h1> About </h1>
         <p> About text here </p>
-        <p> <Link to ="/sharks">Go to sharks page </Link> </p>
+        <p> <Link to ="/products">Go to product page </Link> </p>
     </div>
     )
 }

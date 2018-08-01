@@ -8,17 +8,17 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-app.get("/api/sharks", function(req,res) {
+app.get("/api/products", function(req,res) {
   res.json ([
     {
-      type: "mako",
-      speed: 45,
-      image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Isurus_oxyrinchus_by_mark_conlin2.JPG"
+      type: "MDF Panel",
+      size: "84x36",
+      image: "https://images.homedepot-static.com/productImages/116d314f-3d7b-419c-ba1d-18b6874d5721/svn/black-acurio-latticeworks-vinyl-3248pvc-bk-tol-64_1000.jpg"
     },
     {
-      type: "greate white",
-      speed: 25,
-      image: "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzA2MS8wNTYvb3JpZ2luYWwvZ3JlYXQtd2hpdGUuanBn",
+      type: "MDF Panel",
+      size: "84x36",
+      image: "https://images.homedepot-static.com/productImages/6171c103-b361-4d9b-a3a6-eb74ec137a04/svn/matrix-vinyl-b-bl1812-ch-5-64_1000.jpg",
     }
   ])
 });

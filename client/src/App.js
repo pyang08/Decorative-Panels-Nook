@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
 import about from "./components/about";
-import sharks from "./components/sharks";
+import products from "./components/products";
 import "./App.css";
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
         <Switch>
           <Route exact path ="/" component={about} />
           <Route exact path ="/about" component={about} />
-          <Route exact path ="/sharks" component={sharks} />
+          <Route exact path ="/products" component={products} />
         </Switch>
 
         </div>

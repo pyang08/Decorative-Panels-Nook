@@ -1,19 +1,19 @@
 import React, {Component} from "react";
 import axios from "axios";
 
-export default class Sharks extends Component {
+export default class products extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      sharks: []
+      products: []
     }
   }
 
   componentDidMount() {
-    axios.get('/api/sharks')
+    axios.get('/api/products')
       .then((response) => {
-        this.setState({sharks: response.data});
+        this.setState({products: response.data});
       })
       .catch((error) => {
         console.log(error);
@@ -23,12 +23,13 @@ export default class Sharks extends Component {
   render() {
     return (
       <div>
-        <h1>Sharks!</h1>
-         { this.state.sharks.map((shark) => {
+        <h1>products!</h1>
+         { this.state.products.map((item) => {
             return (
-              <div key={shark.type} >
-                <h3>{shark.type}</h3>
-                <img src={shark.image} width="400"/>
+              <div key={item.type} >
+                <h3>{item.type}</h3>
+                <h3>{item.size}</h3>
+                <img src={item.image} width="400"/>
               </div>
             );
           }) }
