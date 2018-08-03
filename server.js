@@ -2,6 +2,8 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const mongoose = require('mongoose');
+const catalogRoutes = require('./routes/catalogRoutes');
+
 const User = require('./models/User');
 const seedProducts = require('./seeds/products');
 
@@ -11,6 +13,7 @@ const app = express();
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/productslist");
+seedProducts();
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -46,6 +49,9 @@ app.get("/api/wavePanels", function(req,res) {
     }
   ])
 });
+
+app.use('/api/catalog', catalogRoutes);
+
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function(req, res) {
