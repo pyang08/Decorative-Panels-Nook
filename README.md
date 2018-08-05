@@ -1,7 +1,7 @@
-# Project3
+# finalProject
 
 Synopsis
-Small business who provides customize door panels, decorative panel and wardrobe panels like to upgrade the existing site. User need to login to the site and select customized panel designs. User can input customize sizes for the decorative panels in inches and quantity needed for the potential order. This app will help the clients to visual customized designs before placing order. This app helps the user to make better decision and increase the customer engagement with the manufacturer.
+Small business who provides customize door panels, decorative panel and wardrobe panels like to upgrade the existing site. User need to login to the site and select  panel designs. User can add decorative panel to shopping cart. This app will help the clients to visual customized designs before placing order. This app helps the user to make better decision and increase the customer engagement with the manufacturer.
 
 Here is the live version
 

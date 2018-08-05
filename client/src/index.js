@@ -5,6 +5,10 @@ import { Provider } from 'react-redux';
 import catalogReducer from './reducers/catalogReducer';
 import thunk from 'redux-thunk';
 import ShoppingCart from './components/ShoppingCart';
+import filtersReducer from './reducers/filtersReducer';
+import sortReducer from './reducers/sortReducer';
+
+
 
 
 import "./index.css";
@@ -18,7 +22,9 @@ const store = createStore(
     combineReducers({
     
       
-      catalog: catalogReducer
+      catalog: catalogReducer,
+      filters: filtersReducer,
+      sortBy: sortReducer
       
       
     }),

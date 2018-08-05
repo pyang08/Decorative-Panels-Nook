@@ -3,6 +3,8 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const mongoose = require('mongoose');
 const catalogRoutes = require('./routes/catalogRoutes');
+const userRoutes = require('./routes/userRoutes');
+
 
 const User = require('./models/User');
 const seedProducts = require('./seeds/products');
@@ -51,6 +53,8 @@ app.get("/api/wavePanels", function(req,res) {
 });
 
 app.use('/api/catalog', catalogRoutes);
+app.use('/api/user', userRoutes);
+
 
 // Send every request to the React app
 // Define any API routes before this runs
