@@ -8,9 +8,9 @@ Here is the live version
 User interface
 User will be able login using Google Auth.
 
-User can input sizes for customized panels
+User can add decorative panles to the shopping cart.
 
-User data wil be saved and update panel data.
+User can save and update shopping cart.
 
 Technologies
 HTML
@@ -21,3 +21,8 @@ Bootstrap
 jQuery
 SQl
 React
+
+Start this app with the following command:
+
+$ npm run start
+

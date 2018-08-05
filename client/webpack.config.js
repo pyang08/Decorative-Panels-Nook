@@ -51,7 +51,7 @@ module.exports = {
     publicPath: '/dist',
     proxy: [{
       context: ['/auth/*', '/api/*'],
-      target: "http://localhost:3000",
+      target: "http://localhost:5000",
     }]
   }
 }

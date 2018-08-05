@@ -12,9 +12,9 @@ const Product = ({ item }) => (
       <div className="content-left">
         <h3>{item.info.name}</h3>
         <div className="content-info">
-          <div><b>faceDimensions: </b><span>{item.info.faceDimensions}</span></div>
-          <div><b>designContinuity: </b><span>{item.info.designContinuity}</span></div>
-          <div><b>thickness: </b><span>{item.info.thickness}</span></div>
+          <div><b>Face Dimension: </b><span>{item.info.faceDimensions}</span></div>
+          <div><b>Design Continuity: </b><span>{item.info.designContinuity}</span></div>
+          <div><b>Thickness: </b><span>{item.info.thickness}</span></div>
         </div>
       </div>
       <div className="content-right">

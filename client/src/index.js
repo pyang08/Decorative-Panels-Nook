@@ -1,35 +1,26 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import { Provider } from 'react-redux';
-import catalogReducer from './reducers/catalogReducer';
 import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
 import ShoppingCart from './components/ShoppingCart';
+import userReducer from './reducers/userReducer';
+import cartReducer from './reducers/cartReducer';
+import catalogReducer from './reducers/catalogReducer';
 import filtersReducer from './reducers/filtersReducer';
 import sortReducer from './reducers/sortReducer';
 
-
-
-
-import "./index.css";
-import App from "./App";
-import registerServiceWorker from "./registerServiceWorker";
-
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-
 const store = createStore(
-    combineReducers({
-    
-      
-      catalog: catalogReducer,
-      filters: filtersReducer,
-      sortBy: sortReducer
-      
-      
-    }),
-    composeEnhancers(applyMiddleware(thunk))
-  );
+  combineReducers({
+    loggedUser: userReducer,
+    cart: cartReducer,
+    catalog: catalogReducer,
+    filters: filtersReducer,
+    sortBy: sortReducer
+  }),
+  composeEnhancers(applyMiddleware(thunk))
+);
 
-  ReactDOM.render(<Provider store={store}><ShoppingCart/></Provider>, document.getElementById('root'));
-//   registerServiceWorker();
+ReactDOM.render(<Provider store={store}><ShoppingCart/></Provider>, document.getElementById('app_root'));

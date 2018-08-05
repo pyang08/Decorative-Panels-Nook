@@ -1,67 +1,52 @@
-const express = require("express");
-const path = require("path");
-const PORT = process.env.PORT || 3001;
+const express = require('express');
+const path = require('path');
+const bodyParser = require('body-parser');
+const expressSession = require('express-session');
+const passport = require('passport');
+const LocalStrategy = require('passport-local');
 const mongoose = require('mongoose');
+const authRoutes = require('./routes/authRoutes');
 const catalogRoutes = require('./routes/catalogRoutes');
 const userRoutes = require('./routes/userRoutes');
-
-
+const cartRoutes = require('./routes/cartRoutes');
+const orderRoutes = require('./routes/orderRoutes');
 const User = require('./models/User');
 const seedProducts = require('./seeds/products');
+//const privates = require('./config/privates');
+
+const publicPath = path.join(__dirname, 'client', 'public');
+const port = process.env.PORT || 5000;
 
 const app = express();
-
-
+//mongoose.connect(privates.mongoDBURI);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/productslist");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/productlist");
 seedProducts();
+const urlencodedParser = bodyParser.urlencoded({ extended: true });
 
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
+app.use(express.static(publicPath));
+app.use(urlencodedParser);
+app.use(expressSession({
+  //secret: privates.sessionSecret,
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
-app.get("/api/products", function(req,res) {
-  res.json ([
-    {
-      type: "MDF fretwork panel",
-      size: "84x36",
-      image: "https://images.homedepot-static.com/productImages/116d314f-3d7b-419c-ba1d-18b6874d5721/svn/black-acurio-latticeworks-vinyl-3248pvc-bk-tol-64_1000.jpg"
-    },
-    {
-      type: "MDF fretwork panel",
-      size: "84x36",
-      image: "https://images.homedepot-static.com/productImages/6171c103-b361-4d9b-a3a6-eb74ec137a04/svn/matrix-vinyl-b-bl1812-ch-5-64_1000.jpg",
-    }
-  ])
-});
-
-app.get("/api/wavePanels", function(req,res) {
-  res.json ([
-    {
-      type: "3D MDF panel",
-      size: "84x36",
-      image: "https://image.ec21.com/image/gzchungshum/OF0009321722_1/Sell_MDF_wave_panel.jpg"
-    },
-    {
-      type: "3D MDF panel",
-      size: "84x36",
-      image: "https://image.ec21.com/image/gzchungshum/OF0009321732_1/Sell_MDF_wave_board.jpg",
-    }
-  ])
-});
-
+app.use('/auth', authRoutes);
 app.use('/api/catalog', catalogRoutes);
 app.use('/api/user', userRoutes);
+app.use('/api/cart', cartRoutes);
+app.use('/api/order', orderRoutes);
 
-
-// Send every request to the React app
-// Define any API routes before this runs
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(publicPath, 'index.html'));
 });
 
-app.listen(PORT, function() {
-  console.log(`🌎 ==> Server now on port ${PORT}!`);
-});
+app.listen(port, () => console.log('SERVER NOW RUNNING...'));

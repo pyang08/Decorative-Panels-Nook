@@ -1,13 +1,13 @@
 import React from 'react';
-// import FiltersList from './FiltersList';
+import FiltersList from './FiltersList';
 import Products from './Products';
 import '../styles/Homepage.css';
 
 const Homepage = () => (
   <div className="homepage-container">
-    {/* <div className="filtersList-desktop">
+    <div className="filtersList-desktop">
       <FiltersList />
-    </div> */}
+    </div>
     <Products />
   </div>
 );

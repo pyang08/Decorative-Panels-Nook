@@ -5,8 +5,7 @@ import { clearFilters } from '../actions/filterActions';
 import { setSortBy } from '../actions/sortActions';
 import filterProducts from '../selectors/filterProducts';
 import sortProducts from '../selectors/sortProducts';
-// import RaisedButton from 'material-ui/RaisedButton';
-import Button from '@material-ui/core/Button';
+import RaisedButton from 'material-ui/RaisedButton';
 import Drawer from 'material-ui/Drawer';
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
@@ -50,14 +49,14 @@ class Products extends React.Component {
           </div>
           <div className="filters">
             <div className="set-filters">
-              <Button
+              <RaisedButton
                 className="btn"
                 label="Filter products"
                 onClick={this.toggleDrawer}
                 primary={true}
               />
             </div>
-            <Button
+            <RaisedButton
               className="btn"
               label="Clear Filters"
               onClick={this.props.clearFilters}
