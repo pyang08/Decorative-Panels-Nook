@@ -1,11 +1,23 @@
 .header > div {
   z-index: 0 !important;
 }
+.title > div {
+  background-color: #B71C1C
+  ;
+}
 
-.title h1 {
+
+div.title  {
+  background-color: #B71C1C
+
+  !important;
+}
+
+ h1 {
   font-family: 'Raleway';
   font-style: italic;
-  background-color: rgb(240, 29, 43)
+  background-color: #b71c1c24
+  ;
 }
 
 .menu { 

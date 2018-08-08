@@ -10,6 +10,12 @@
   transition: .3s;
 }
 
+.btncl a {
+  background-color: #B71C1C !important;
+  
+  }
+
+
 .product:hover {
   box-shadow: 0 0 7px #b3b3b3;
 }

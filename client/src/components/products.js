@@ -57,7 +57,7 @@ class Products extends React.Component {
               />
             </div>
             <RaisedButton
-              className="btn"
+              className="btncolor"
               label="Clear Filters"
               onClick={this.props.clearFilters}
               secondary={true}

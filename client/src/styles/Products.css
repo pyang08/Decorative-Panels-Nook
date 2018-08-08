@@ -1,8 +1,12 @@
 .loader {
   margin-top: 150px;
-  color: #00BCD4;
+  color: #B71C1C;
   text-align: center;
 }
+.btn button {
+  background-color: #B71C1C !important;
+  
+  }
 
 .no-products {
   margin-top: 150px;
@@ -18,7 +22,7 @@
 .products-handle {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #81D4FA;
+  border-bottom: 1px solid rgb(180, 4, 4);
 }
 
 .products-handle .products-found {

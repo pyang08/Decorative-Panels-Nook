@@ -34,14 +34,14 @@
 }
 
 .product-info th {
-  background-color: #00BCD4;
+  background-color: #B71C1C;
   color: white;
 }
 
 .product-info th, .product-info td {
   padding: 3px;
   text-align: left;
-  border: 1px solid #80DEEA;
+  border: 1px solid rgb(243, 139, 139);
 }
 
 .price-text {
