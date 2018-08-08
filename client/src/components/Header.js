@@ -54,7 +54,7 @@ class Header extends React.Component {
       <div className="header">
         <AppBar 
           className="title"
-          title="DECORATIVE PANELS NOOK"
+          title="DECORATIVE PANELS NOOK!!!!"
           onTitleClick={() => this.props.history.push('/')}
           showMenuIconButton={false}
           zDepth={0}

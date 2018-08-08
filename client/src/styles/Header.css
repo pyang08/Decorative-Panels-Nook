@@ -3,8 +3,9 @@
 }
 
 .title h1 {
-  font-family: 'Bungee Inline';
+  font-family: 'Raleway';
   font-style: italic;
+  background-color: rgb(240, 29, 43)
 }
 
 .menu { 

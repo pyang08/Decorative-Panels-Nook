@@ -6,7 +6,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start:dev": "webpack-dev-server",
+    "start:dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "build": "webpack -p"
   },
   "dependencies": {
