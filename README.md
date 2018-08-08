@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # finalProject
 
 Synopsis
@@ -26,3 +27,6 @@ Start this app with the following command:
 
 $ npm run start
 
+=======
+# Project3v2
+>>>>>>> 9d5d9000f24c4e48c93bd08f8f8f176c0e88ef8b
