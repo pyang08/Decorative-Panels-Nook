@@ -100,7 +100,7 @@ class ProductDetails extends React.Component {
               <span className="price-text">Quantity: </span>
               <span><input type="number" value={this.state.postData.quantity} min="1" max="5" onChange={this.onQuantityChange} /></span>
             </div>
-            <div className="btn">
+            <div className="btncl">
               <RaisedButton
                 onClick={this.addToCart}
                 label="Add to cart"

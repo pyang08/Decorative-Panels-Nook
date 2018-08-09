@@ -4,6 +4,11 @@
   border: 1px solid #ffffff00;
 }
 
+.btncl button {
+  background-color: #B71C1C !important;
+  
+  }
+
 .product-details-container h1 {
   margin-top: 100px;
   margin-bottom: 20px;

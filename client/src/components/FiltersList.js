@@ -82,7 +82,7 @@ class FiltersList extends React.Component {
             primaryTogglesNestedList={true}
             nestedItems={[
               <Checkbox className="checkbox" label="Length side" name="designContinuity" value="length_side" onCheck={this.handleCheck} />,
-              <Checkbox className="checkbox" label="All sided" name="designContinuity" value="All-sided" onCheck={this.handleCheck} />,
+              <Checkbox className="checkbox" label="All sided" name="designContinuity" value="all_sided" onCheck={this.handleCheck} />,
               <Checkbox className="checkbox" label="Width side" name="designContinuity" value="width_side" onCheck={this.handleCheck} />
             ]}
           />

@@ -50,14 +50,14 @@ class Products extends React.Component {
           <div className="filters">
             <div className="set-filters">
               <RaisedButton
-                className="btn"
+                className="btncolor"
                 label="Filter products"
                 onClick={this.toggleDrawer}
                 primary={true}
               />
             </div>
             <RaisedButton
-              className="btncolor"
+              className="btn"
               label="Clear Filters"
               onClick={this.props.clearFilters}
               secondary={true}
