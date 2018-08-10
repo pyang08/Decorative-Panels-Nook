@@ -15,7 +15,7 @@ class App extends Component {
         <Header className="header-color" title="Title" scroll>
             <Navigation>
                 <Link to="/about">About</Link>
-                <a href="http://localhost:5000">products1</a>
+                <a href="http://localhost:8080">Enter for Shopping</a>
                 <Link to="/contact">Contact</Link>
                 <Link to="/signin">Sign in</Link>
             </Navigation>

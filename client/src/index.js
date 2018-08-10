@@ -22,5 +22,10 @@ const store = createStore(
   }),
   composeEnhancers(applyMiddleware(thunk))
 );
+console.log(store.getState());
+console.log(store);
+
+
 
 ReactDOM.render(<Provider store={store}><ShoppingCart/></Provider>, document.getElementById('app_root'));
+
