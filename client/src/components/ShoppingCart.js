@@ -5,6 +5,7 @@ import Header from './Header';
 import Account from './Account';
 import Cart from './Cart';
 import Homepage from './Homepage';
+import Entrance from './Entrance';
 import ProductDetails from './ProductDetails';
 import Footer from './Footer';
 import NotFound from './NotFound';
@@ -17,6 +18,7 @@ const ShoppingCart = () => (
         <Route component={Header} />
         <Switch>
           <Route exact path="/" component={Homepage} />
+          <Route path="/entrance" component={Entrance} />
           <Route path="/account" component={Account} />
           <Route path="/cart" component={Cart} />
           <Route path="/product/:id" component={ProductDetails} />
