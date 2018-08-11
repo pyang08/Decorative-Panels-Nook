@@ -19,6 +19,12 @@ div.title  {
   !important;
 }
 
+.logo{
+  height: 50px;
+  width: 35px;
+}
+
+
  h1 {
   font-family: 'Raleway';
   font-style: italic;

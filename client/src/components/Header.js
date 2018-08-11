@@ -52,8 +52,10 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
+      <img className="logo" src='/img/logo2.png'/>
         <AppBar 
           className="title"
+          
           title="DECORATIVE PANELS NOOK"
           onTitleClick={() => this.props.history.push('/')}
           showMenuIconButton={false}
