@@ -54,16 +54,12 @@ class Header extends React.Component {
       <div className="header">
       {/* <img className="logo" src='/img/logo2.png'/> */}
         <AppBar 
-             text = 'dfdfdf'
-         
-          
-         
        
           className="title"
           text="DECORATIVE PANELS NOOK"
           title = {<img src = '/img/logo2.png' alt="Logo"  style={{height: 64}}/>}
           
-          onTitleClick={() => this.props.history.push('/')}
+          onTitleClick={() => this.props.history.push('/Homepage')}
           showMenuIconButton={false}
           zDepth={0}
           iconElementRight={

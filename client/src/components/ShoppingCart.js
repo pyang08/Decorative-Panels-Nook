@@ -17,8 +17,8 @@ const ShoppingCart = () => (
       <div className="container">
         <Route component={Header} />
         <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/entrance" component={Entrance} />
+          <Route exact path="/" component={Entrance} />
+          <Route path="/Homepage" component={Homepage} />
           <Route path="/account" component={Account} />
           <Route path="/cart" component={Cart} />
           <Route path="/product/:id" component={ProductDetails} />
