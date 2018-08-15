@@ -10,8 +10,8 @@ import catalogReducer from './reducers/catalogReducer';
 import filtersReducer from './reducers/filtersReducer';
 import sortReducer from './reducers/sortReducer';
 
-import 'react-mdl/extra/material.css';
-import 'react-mdl/extra/material.js';
+// import 'react-mdl/extra/material.css';
+// import 'react-mdl/extra/material.js';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
