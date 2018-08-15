@@ -4,9 +4,15 @@ import '../styles/Footer.css';
 
 const Footer = () => (
   <div className="footer">
-    <p>Decorative Panel Nook! &copy; 2018</p>
+    <p>Decorative Panel Nook! &copy; 2018 
+    <h5> Amal <a href="https://github.com/amalhassan007" target = "blank"><img src = "/img/github-circle.png"></img></a>
+     Pam <a href="https://github.com/pyang08" target = "blank"> <img src = "/img/github-circle.png"></img></a>
+    Mirza <a href="https://github.com/mrhdigital" target = "blank"><img src = "/img/github-circle.png"></img></a>
+    </h5>
+</p>
   </div>
 );
+//title = {<img src = '/img/logo2.png' alt="Logo"  style={{height: 64}}/>}
 
 // const Footer = () => (
 //   <div className="footer">
