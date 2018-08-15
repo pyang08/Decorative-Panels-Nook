@@ -4,7 +4,12 @@ import '../styles/Footer.css';
 
 const Footer = () => (
   <div className="footer">
-    <p>Decorative Panel Nook! &copy; 2018</p>
+    <p>Decorative Panel Nook! &copy; 2018 
+    <h6> Amal <a href="https://github.com/amalhassan007"><img src = "./github-circle.png"></img></a>
+     Pam <a href="https://github.com/pyang08"><img src = "./github-circle.png"></img></a>
+    Mirza <a href="https://github.com/mrhdigital"><img src = "./github-circle.png"></img></a>
+    </h6>
+</p>
   </div>
 );
 
