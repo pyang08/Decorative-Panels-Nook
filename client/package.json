@@ -7,7 +7,7 @@
   "license": "ISC",
   "scripts": {
     "start:dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "build": "webpack --quiet"
+    "build": "webpack"
   },
   "dependencies": {
     "axios": "^0.17.1",
