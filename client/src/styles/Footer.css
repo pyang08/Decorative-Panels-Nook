@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.footer p {
+.footer  {
   margin: 0;
   padding: 3px;
 }
@@ -32,4 +32,20 @@
 /* selected link */
 .footer a:active {
   color: #ffffff;
+}
+
+.inlineBlock {
+  display:inline-block;
+  padding: 15px;
+}
+
+.blockmargin  {
+  margin-bottom: 1px;
+  margin-top: 1px;
+
+}
+h5  {
+  margin-bottom: 0px;
+  margin-top: 0px;
+
 }
