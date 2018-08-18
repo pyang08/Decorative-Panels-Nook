@@ -57,7 +57,7 @@ class Header extends React.Component {
        
           className="title"
           text="DECORATIVE PANELS NOOK"
-          title = {<img src = '/img/logo2.png' alt="Logo"  style={{height: 64}}/>}
+          title = {<img src = '/img/logoFinal2.png' style={{height: 60}}/>}
           
           onTitleClick={() => this.props.history.push('/Homepage')}
           showMenuIconButton={false}
