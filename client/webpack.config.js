@@ -53,5 +53,9 @@ module.exports = {
       context: ['/auth/*', '/api/*'],
       target: "http://localhost:5000",
     }]
+  },
+  stats: {
+    errors: true,
+    errorDetails:true
   }
 }
