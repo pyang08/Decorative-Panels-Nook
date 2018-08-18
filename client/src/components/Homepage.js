@@ -1,6 +1,6 @@
 import React from 'react';
 import FiltersList from './FiltersList';
-import Products from './Products';
+import Products from './products';
 import '../styles/Homepage.css';
 
 const Homepage = () => (
