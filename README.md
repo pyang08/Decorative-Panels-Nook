@@ -1,5 +1,5 @@
 # Decorative Panels Nook
-A furniture store app which would increase the customer engagement with the manufacturer. This app specializes in decorative panels alone in order for the client to not only customize but also search for desired panels based off of size, color, brand, thickness, face dimension and design continuity. 
+A furniture store app which increases the customer engagement with the manufacturer. This app specializes in decorative panels alone in order for the client to not only customize but also search for desired panels based off of size, color, brand, thickness, face dimension and design continuity. 
 
 # Technologies Used:
 * Passport
