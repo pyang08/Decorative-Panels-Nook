@@ -1,28 +1,38 @@
-# finalProject
+# Decorative Panels Nook
+We built a furniture store app which would increase the customer engagement with the manufacturer. We specialized our app on decorative panels alone in order for the client to not only customize but also search for desired panels based off of size, color, brand, thickness, face dimension and design continuity. 
 
-Synopsis
-Small business who provides customize door panels, decorative panel and wardrobe panels like to upgrade the existing site. User need to login to the site and select  panel designs. User can add decorative panel to shopping cart. This app will help the clients to visual customized designs before placing order. This app helps the user to make better decision and increase the customer engagement with the manufacturer.
+TECHNOLOGIES:
+•	Passport
+•	Bootstrap
+•	React
+•	Redux
+•	HTML
+•	CSS
+•	JavaScript
+•	Node.js
+•	jQuery
+•	MongoDB
 
-Here is the live version
-
-User interface
-User will be able login using Google Auth.
-
-User can add decorative panles to the shopping cart.
-
-User can save and update shopping cart.
-
-Technologies
-HTML
-CSS
-JavaScript
-Node.js
-Bootstrap
-jQuery
-SQl
-React
+Node packages included:
+•	Express
+•	Path
+•	Body-parser
+•	Express-Session
+•	Mongoose
 
 Start this app with the following command:
+$ npm run start:dev-full
 
-$ npm run start
+CHALLENGES:
+Redux itself is very complex and having to learn and apply it was one of our biggest challenge. Another challenge was merging our work with the master repo. Overall, communication was key and everyone did a great job staying in-touch.
+
+IMPROVEMENTS:
+We would love to incorporate a larger database with a bigger variety of furniture. We have not yet included a pay system after checking out and would love to also include that technology as the final step for this app.
+
+DEVELOPMENT TEAM:
+•	Amal
+•	Mirza
+•	Pamela
+
+
 
