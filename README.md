@@ -12,12 +12,14 @@ A furniture store app which increases the customer engagement with the manufactu
 * Node.js
 * jQuery
 * MongoDB
+* Heroku
 
 Node packages included:
 * Express
 * Path
 * Body-parser
 * Express-Session
+* MongoDB
 * Mongoose
 
 Start this app with the following command:
