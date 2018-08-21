@@ -22,7 +22,7 @@ Node packages included:
 * MongoDB
 * Mongoose
 
-Start this app with the following command:
+To state this app, use the following command:
 $ npm run start:dev-full
 
 # Challenges:
