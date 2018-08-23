@@ -1,28 +1,40 @@
-# finalProject
+# Decorative Panels Nook
+A furniture store app which increases the customer engagement with the manufacturer. This app specializes in decorative panels alone in order for the client to not only customize but also search for desired panels based off of size, color, brand, thickness, face dimension and design continuity. 
 
-Synopsis
-Small business who provides customize door panels, decorative panel and wardrobe panels like to upgrade the existing site. User need to login to the site and select  panel designs. User can add decorative panel to shopping cart. This app will help the clients to visual customized designs before placing order. This app helps the user to make better decision and increase the customer engagement with the manufacturer.
+# Technologies Used:
+* Passport
+* Bootstrap
+* React
+* Redux
+* HTML
+* CSS
+* JavaScript
+* Node.js
+* jQuery
+* MongoDB
+* Heroku
 
-Here is the live version
+Node packages included:
+* Express
+* Path
+* Body-parser
+* Express-Session
+* MongoDB
+* Mongoose
 
-User interface
-User will be able login using Google Auth.
+To state this app, use the following command:
+$ npm run start:dev-full
 
-User can add decorative panles to the shopping cart.
+# Challenges:
+Redux itself is very complex and having to learn and apply it was one of our biggest challenge. Another challenge was merging our work with the master repo. Overall, communication was key and everyone did a great job staying in-touch.
 
-User can save and update shopping cart.
+# Improvements:
+We would love to incorporate a larger database with a bigger variety of furniture. We have not yet included a pay system after checking out and would love to also include that technology as the final step for this app.
 
-Technologies
-HTML
-CSS
-JavaScript
-Node.js
-Bootstrap
-jQuery
-SQl
-React
+# Development Team:
+* [Amal Hassan](https://github.com/amalhassan007)
+* [Mirza Hameed](https://github.com/mrhdigital)
+* [Pamela Yang](https://github.com/pyang08)
 
-Start this app with the following command:
 
-$ npm run start
 

@@ -5,7 +5,7 @@ import '../styles/Footer.css';
 
 const Footer = () => (
   <div className="footer">
-    <p>Decorative Panel Nook! &copy; 2018 </p>
+    <p>Decorative Panel Nook!! &copy; 2018 </p>
 
 
     <Row className="show-grid">
